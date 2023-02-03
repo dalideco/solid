@@ -24,3 +24,10 @@
 
 # LSP
 
+**problem:** The in the example is that the client class pool won't work for for electronic duck since it's turned off
+
+**solution:** remove heritage and split the pool into a non electronic and an electronic one.
+
+**Diagram:**
+![LSP Diagram](LSP/Diagram.png)
+
