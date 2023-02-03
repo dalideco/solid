@@ -1,0 +1,5 @@
+@startuml srp
+Resource <-- ResourceAllocator
+Resource <|-- TimeResource
+Resource <|-- SpaceResource
+@enduml
