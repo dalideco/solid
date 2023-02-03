@@ -8,9 +8,19 @@
 - CarRepository: CRUD operators
 
 **Diagram:**
-![My animated logo](SRP/Diagram.png)
+![SRP Diagram](SRP/Diagram.png)
 
 <br>
 
 # OCP
+
+**problem:** The problem in the example is in case of creating a new Resource type, it will require to update the allocate function in the Allocator class.
+
+**Solution:** We make Time and Space resources inherit from an abstract Resource class, and each can then implement its own allocate and free methods.
+
+**Diagram:**
+![OCP Diagram](OCP/Diagram.png)
+
+
+# LSP
 
