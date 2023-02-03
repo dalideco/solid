@@ -5,10 +5,7 @@ public class SpaceResource extends Resource {
     @Override
     public int allocate() {
         int resourceId = findFreeSpaceSlot();
-
-        resourceId = findFreeSpaceSlot();
         markSpaceSlotBusy(resourceId);
-
         return resourceId;
     }
 

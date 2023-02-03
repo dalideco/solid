@@ -1,11 +1,19 @@
 package com.directi.training.ocp.exercice_refactored;
 
 public class ResourceAllocator {
-    public int allocate(Resource resource) {
-        return resource.allocate();
+
+    Resource resource;
+    private int resourceId;
+
+    ResourceAllocator(Resource resource) {
+        this.resource = resource;
     }
 
-    public void free(Resource resource, int resourceId) {
-        resource.free(resourceId);
+    public void allocate() {
+        this.resourceId = resource.allocate();
+    }
+
+    public void free() {
+        resource.free(this.resourceId);
     }
 }
