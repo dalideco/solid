@@ -1,0 +1,4 @@
+@startuml srp
+Duck <-- Pool
+ElectronicDuck <|-- ElectronicPool
+@enduml
